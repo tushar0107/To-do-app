@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+*{
+  border: 1px solid red;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+    --black: #3d3d3d;
+    --offblack: #d1d1d1;
+    --primary: #5f7aff;
+    --offwhite: #f8f8fa;
+    --white: #ffffff;
+    --offprimary: #889cff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  margin: 0;
+  color: #282828;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#heading{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 8px;
+}
+#heading h2{
+  margin: 4px;
+}
+#heading li a{
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: var(--black);
+}
+#heading ul{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+#searchform{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.searchinput{
+    display: block;
+    width: 70%;
+    margin: 8px;
+    padding: 8px;
+    border: 1px solid var(--offblack);
+    border-radius: 6px;
+}
+.searchbtn{
+    padding: 8px 16px;
+    color: white;
+    background-color: var(--primary);
+    border-radius: 8px;
+    border: none;
+}
+#nav{
+  z-index: 1;
+  display: none;
+  width: 50%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: aqua;
+}
+#nav ul li{
+  list-style-type: none;
+  color: var(--black);
+  background-color: var(--offblack);
+}
+#nav ul li a{
+  display: block;
+  padding: 6px;
+  width: 100%;
+  color: var(--black);
+}
+a{
+  text-decoration: none;
+}
+button:hover{
+    background-color: var(--offprimary);
+}
+li{
+  list-style-type: none;
 }
