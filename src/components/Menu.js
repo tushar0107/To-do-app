@@ -8,6 +8,7 @@ export default function Menu() {
                 <ul>
                     <li><a>To Do</a></li>
                     <li><a>Monthly limit</a></li>
+                    <li><a>Monthly limit</a></li>
                 </ul>
             </div>
 
